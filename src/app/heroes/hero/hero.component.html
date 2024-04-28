@@ -1,4 +1,4 @@
-<h1>Spiderman</h1>
+<h1>{{name}}</h1>
 
 <dl>
   <td>Nombre</td>
@@ -16,11 +16,11 @@
 </dl>
 
 
-<button class="btn btn-primary mx-2">
+<button (click)="changeHeroName()" class="btn btn-primary mx-2">
 Cambiar nombre
 </button>
 
 
-<button class="btn btn-primary">
+<button (click)="changeHeroAge()" class="btn btn-primary">
   Cambiar edad
 </button>

@@ -14,6 +14,18 @@ export class HeroComponent {
   }
 
   get getHeroDescription():string{
-    return `${this.name} - ${this.age}`
+    return `${this.name} - ${this.age}`;
+  }
+
+  changeHeroName():void{
+    this.name='Spider-man';
+  }
+
+  changeHeroAge():void{
+    this.age=25;
+  }
+
+  randomMethod():void{
+    throw 'Not implemented method'
   }
 }
