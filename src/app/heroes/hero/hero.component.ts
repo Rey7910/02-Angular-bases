@@ -25,6 +25,11 @@ export class HeroComponent {
     this.age=25;
   }
 
+  resetForm():void{
+    this.age=45;
+    this.name='iron man';
+  }
+
   randomMethod():void{
     throw 'Not implemented method'
   }
