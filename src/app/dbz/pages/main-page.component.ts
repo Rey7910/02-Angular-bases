@@ -20,7 +20,13 @@ export class MainPageComponent {
 
 
   onNewCharacter(character: Character):void{
-    console.log("Main page: ",{character});
-    console.log(this.characters);
+    //console.log("Main page: ",{character});
+    // console.log(this.characters);
+
+    this.characters.push(character);
+  }
+
+  deleteCharacter(id: number):void{
+    this.characters.splice(id,1);
   }
 }
