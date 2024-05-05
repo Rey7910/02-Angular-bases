@@ -9,7 +9,7 @@ import { Character } from '../../interfaces/character.interface';
 export class ListComponent {
 
   @Output("OutputDeleteCharacter")
-  public deleteCharacter: EventEmitter<number> = new EventEmitter();
+  public deleteCharacter: EventEmitter<string> = new EventEmitter();
 
 
 
@@ -20,7 +20,7 @@ export class ListComponent {
   }];
 
 
-  emitId(index: number):void{
+  emitId(index: string):void{
 
     console.log({index})
 
