@@ -20,14 +20,11 @@ export class ListComponent {
   }];
 
 
-  onDeleteCharacter(index:number):void{
-    console.log(index)
-  }
+  emitId(index: number):void{
 
+    console.log({index})
 
-  emitId(id: number):void{
-
-    this.deleteCharacter.emit(id);
+    this.deleteCharacter.emit(index);
 
   }
 }
